@@ -1,7 +1,7 @@
 local addonName, ns = ...
 
-local MyAddon = CreateFrame("Frame")
-ns.MyAddon = MyAddon
+local GoldTracker = CreateFrame("Frame")
+ns.GoldTracker = GoldTracker
 
 local function OnEvent(self, event, ...)
   if event == "PLAYER_LOGIN" then
@@ -9,5 +9,5 @@ local function OnEvent(self, event, ...)
   end
 end
 
-MyAddon:RegisterEvent("PLAYER_LOGIN")
-MyAddon:SetScript("OnEvent", OnEvent)
+GoldTracker:RegisterEvent("PLAYER_LOGIN")
+GoldTracker:SetScript("OnEvent", OnEvent)
